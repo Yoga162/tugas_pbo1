@@ -9,7 +9,18 @@ public class Peminjaman {
     this.lama_pinjam  = lama_pinjam;
     }
 
+    public Customer getcustomer(){
+        return customer;
+    }
+    public Cd getcd(){
+        return cd;
+    }
+
+
     public void info() {
-    System.out.println(customer.getNomer_ktp() + " Nama Customer: " + customer.getNama()  + " Nama CD: " + cd.getNama() + " Lama Peminjaman: " + lama_pinjam);
+        System.out.println("No. KTP          : " + customer.getNomer_ktp());
+        System.out.println("Nama Customer    : " + customer.getNama());
+        System.out.println("Nama CD          : " + cd.getNama());
+        System.out.println("Lama Peminjaman  : " + lama_pinjam);
     }
 }
